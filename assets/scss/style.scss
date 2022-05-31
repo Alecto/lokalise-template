@@ -1,13 +1,4 @@
-@use "presets" as *;
-@use "common";
+@import "../../node_modules/normalize.css/normalize.scss";
 
-body {
-  background-color: $color-primary;
-  color: $color-accent;
-}
-
-div {
-  width: $ul;
-  padding-left: $gap;
-  padding-right: $gap;
-}
+@import "common/fonts";
+@import "common/typography";
