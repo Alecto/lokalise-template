@@ -20,13 +20,13 @@
   &::after {
     content: "";
     height: 1px;
-    width: 100%;
-    top: 100%;
+    width: 100vw;
     background-color: $color-gray;
 
     position: absolute;
     bottom: 0;
-    //transform: translateX(-50%);
+    left: 50%;
+    margin-left: -50vw;
   }
 
   &__actions {
