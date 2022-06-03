@@ -1,3 +1,6 @@
+@use "../presets" as *;
+$diff: 0.2px;
+
 /* xl */
 @mixin xl-min {
   @media (min-width: $xl) {
@@ -6,31 +9,31 @@
 }
 
 @mixin xl {
-  @media (max-width: $xl - 0.2px) {
+  @media (max-width: ($xl - $diff)) {
     @content;
   }
 }
 
 @mixin xl-lg {
-  @media (max-width: $xl - 0.2px) and (min-width: $lg) {
+  @media (max-width: ($xl - $diff)) and (min-width: $lg) {
     @content;
   }
 }
 
 @mixin xl-md {
-  @media (max-width: $xl - 0.2px) and (min-width: $md) {
+  @media (max-width: ($xl - $diff)) and (min-width: $md) {
     @content;
   }
 }
 
 @mixin xl-sm {
-  @media (max-width: $xl - 0.2px) and (min-width: $sm) {
+  @media (max-width: ($xl - $diff)) and (min-width: $sm) {
     @content;
   }
 }
 
 @mixin xl-xs {
-  @media (max-width: $xl - 0.2px) and (min-width: $xs) {
+  @media (max-width: ($xl - $diff)) and (min-width: $xs) {
     @content;
   }
 }
@@ -43,25 +46,25 @@
 }
 
 @mixin lg {
-  @media (max-width: $lg - 0.2px) {
+  @media (max-width: ($lg - $diff)) {
     @content;
   }
 }
 
 @mixin lg-md {
-  @media (max-width: $lg - 0.2px) and (min-width: $md) {
+  @media (max-width: ($lg - $diff)) and (min-width: $md) {
     @content;
   }
 }
 
 @mixin lg-sm {
-  @media (max-width: $lg - 0.2px) and (min-width: $sm) {
+  @media (max-width: ($lg - $diff)) and (min-width: $sm) {
     @content;
   }
 }
 
 @mixin lg-xs {
-  @media (max-width: $lg - 0.2px) and (min-width: $xs) {
+  @media (max-width: ($lg - $diff)) and (min-width: $xs) {
     @content;
   }
 }
@@ -74,19 +77,19 @@
 }
 
 @mixin md {
-  @media (max-width: $md - 0.2px) {
+  @media (max-width: ($md - $diff)) {
     @content;
   }
 }
 
 @mixin md-sm {
-  @media (max-width: $md - 0.2px) and (min-width: $sm) {
+  @media (max-width: ($md - $diff)) and (min-width: $sm) {
     @content;
   }
 }
 
 @mixin md-xs {
-  @media (max-width: $md - 0.2px) and (min-width: $xs) {
+  @media (max-width: ($md - $diff)) and (min-width: $xs) {
     @content;
   }
 }
@@ -99,13 +102,13 @@
 }
 
 @mixin sm {
-  @media (max-width: $sm - 0.2px) {
+  @media (max-width: ($sm - $diff)) {
     @content;
   }
 }
 
 @mixin sm-xs {
-  @media (max-width: $sm - 0.2px) and (min-width: $xs) {
+  @media (max-width: ($sm - $diff)) and (min-width: $xs) {
     @content;
   }
 }
@@ -118,7 +121,7 @@
 }
 
 @mixin xs {
-  @media (max-width: $xs - 0.2px) {
+  @media (max-width: ($xs - $diff)) {
     @content;
   }
 }
