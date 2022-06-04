@@ -5,14 +5,9 @@
   position: relative;
 
   display: flex;
-  align-items: center;
+  flex-direction: column;
 
   min-height: 100vh;
 
   background-color: $color-white;
-
-  @include sm {
-    align-items: stretch;
-    flex-direction: column;
-  }
 }

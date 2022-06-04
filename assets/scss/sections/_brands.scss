@@ -22,11 +22,29 @@
   }
 
   &__list {
-    display: flex;
-    gap: $gap;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
-    max-width: 100%;
-    overflow: hidden;
+
+    gap: ($gap * 2) $gap;
+    @include xl-min {
+      justify-content: space-between;
+
+      grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+    }
+    @include xl-lg {
+      justify-content: space-evenly;
+
+      grid-template-columns: repeat(3, minmax(50px, max-content));
+      justify-items: center;
+    }
+    @include lg-sm {
+      justify-content: space-evenly;
+
+      grid-template-columns: repeat(2, minmax(50px, max-content));
+      justify-items: center;
+    }
+    @include sm {
+      justify-items: center;
+    }
   }
 }

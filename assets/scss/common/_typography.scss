@@ -46,8 +46,9 @@ h1 {
 
 h2 {
   text-align: center;
-  line-height: 1.2;
+
   font-weight: 600;
+  line-height: 1.2;
 
   @include xl-min {
     font-size: 50px;

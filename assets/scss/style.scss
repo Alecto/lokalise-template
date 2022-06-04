@@ -8,7 +8,9 @@
 
 @use "sections/header/header";
 @use "sections/header/header-menu";
+@use "sections/header/header-logo";
 @use "sections/header/header-navbar";
+@use "sections/header/header-actions";
 @use "sections/header/header-content";
 
 @use "sections/main";
