@@ -20,3 +20,60 @@
     margin-right: auto;
   }
 }
+
+%job-content {
+  flex-grow: 1;
+  flex-basis: 200px;
+  @include ul-min {
+    padding-right: 160px;
+  }
+  @include ul-xl {
+    padding-right: 60px;
+  }
+}
+
+%job-title {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+
+  @include xl-min {
+    font-size: 50px;
+  }
+  @include xl-lg {
+    font-size: 40px;
+  }
+  @include lg {
+    font-size: 30px;
+  }
+}
+
+%job-description {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+%job-picture {
+  flex-grow: 1;
+  flex-basis: 200px;
+  background-color: $color-bg-light;
+
+  @include lg-min {
+    padding: 190px 95px;
+  }
+  @include lg {
+    padding: 50px;
+  }
+}
+
+%job-image {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba($color-black, 0.5);
+}
+
+%job-btn {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}

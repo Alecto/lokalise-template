@@ -40,6 +40,7 @@ function scss() {
 function scssDev() {
   return src(PATH.scssFile, {sourcemaps: true})
       .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+      .pipe(postcss([mqpacker({sort: sortCSSmq})]))
       .pipe(dest(PATH.cssFolder, {sourcemaps: true}))
       .pipe(browserSync.stream());
 }
