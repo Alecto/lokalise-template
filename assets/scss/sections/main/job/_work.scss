@@ -2,8 +2,9 @@
 @use "../../../mixins" as *;
 
 .work {
-  @extend %job-article;
   flex-direction: row-reverse;
+
+  @extend %job-article;
 
   &__content {
     @extend %job-content;

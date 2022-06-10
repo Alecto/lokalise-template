@@ -2,8 +2,9 @@
 @use "../../../mixins" as *;
 
 .opportunities {
-  background-color: $color-bg-light;
   padding: 120px 0;
+
+  background-color: $color-bg-light;
 
   &__title {
     margin: 0 0 80px;
@@ -11,8 +12,10 @@
 
   &__content {
     display: grid;
+
     @include xl-min {
       padding: 0 40px;
+
       gap: 110px;
     }
     @include xl {

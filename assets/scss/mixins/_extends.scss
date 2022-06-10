@@ -3,11 +3,12 @@
 @use "mixins-media" as *;
 
 %job-article {
+  display: flex;
+
   margin-top: 100px;
   margin-bottom: 125px;
-  display: flex;
-  gap: $gap;
 
+  gap: $gap;
   @include lg-min {
     align-items: center;
   }
@@ -16,14 +17,15 @@
   }
   @include lg-md {
     width: 80%;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
 
 %job-content {
-  flex-grow: 1;
   flex-basis: 200px;
+  flex-grow: 1;
+
   @include ul-min {
     padding-right: 160px;
   }
@@ -34,6 +36,7 @@
 
 %job-title {
   margin: 0;
+
   font-weight: 600;
   line-height: 1.2;
 
@@ -54,8 +57,9 @@
 }
 
 %job-picture {
-  flex-grow: 1;
   flex-basis: 200px;
+  flex-grow: 1;
+
   background-color: $color-bg-light;
 
   @include lg-min {
@@ -68,12 +72,13 @@
 
 %job-image {
   width: 100%;
+
   border-radius: 18px;
   box-shadow: 0 0 10px rgba($color-black, 0.5);
 }
 
 %job-btn {
-  font-weight: 600;
   font-size: 1.25rem;
+  font-weight: 600;
   line-height: 1.5;
 }
